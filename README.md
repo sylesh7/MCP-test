@@ -14,4 +14,4 @@ Back to normal
 
 Testing todays manipulation
 
-real manipulation test
+Testing plan
