@@ -14,4 +14,4 @@ Back to normal
 
 Testing todays manipulation
 
-Testing plan
+Testing for all commits
