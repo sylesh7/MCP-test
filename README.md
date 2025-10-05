@@ -5,3 +5,5 @@ Future Commit
 No edit
 
 Less time
+
+Back to normal
