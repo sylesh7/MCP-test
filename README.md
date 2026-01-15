@@ -15,3 +15,5 @@ Back to normal
 Testing todays manipulation
 
 Fixed Loop case
+
+commit for close range manipulation
