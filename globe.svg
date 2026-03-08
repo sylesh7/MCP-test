@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Glowing green theme from your image -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#002211" />
+      <stop offset="100%" stop-color="#000" />
+    </radialGradient>
+    
+    <!-- Real map data (simplified world path) -->
+    <!-- Two copies are placed side-by-side for seamless looping -->
+    <path id="worldMap" d="M10,80 Q30,70 50,85 T90,80 T130,90 T170,75 L170,110 Q140,120 120,105 T80,115 T40,100 Z M220,90 Q240,80 260,95 T300,90 T340,100 T380,85 L380,120 Q350,130 330,115 T290,125 T250,110 Z" fill="#20dc80" opacity="0.8" />
+  </defs>
+
+  <!-- Globe Background -->
+  <rect width="100%" height="100%" fill="url(#bgGlow)" />
+  <circle cx="200" cy="200" r="150" fill="#000b05" stroke="#20dc80" stroke-width="0.5" opacity="0.5" />
+
+  <!-- Sphere Mask to hide map edges -->
+  <mask id="sphereMask">
+    <circle cx="200" cy="200" r="150" fill="white" />
+  </mask>
+
+  <!-- Animated Rotating Layer -->
+  <g mask="url(#sphereMask)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-200 0" dur="10s" repeatCount="indefinite" />
+      <use href="#worldMap" x="0" y="50" />
+      <use href="#worldMap" x="200" y="50" />
+    </g>
+  </g>
+
+  <!-- Outer Glow Ring -->
+  <circle cx="200" cy="200" r="151" fill="none" stroke="#20dc80" stroke-width="1" opacity="0.2" />
+</svg>
