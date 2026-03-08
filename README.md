@@ -17,3 +17,4 @@ Testing todays manipulation
 Fixed Loop case
 
 commit for close range manipulation
+![Rotating Globe](./globe.svg)
