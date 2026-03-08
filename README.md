@@ -18,5 +18,3 @@ Fixed Loop case
 
 commit for close range manipulation
 ![Rotating Globe](./globe.svg)
-
-![](https://github-readme-stats.vercel.app)
